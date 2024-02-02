@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Weather</title>
+    <script defer src="scripts/script.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <aside class="main-loading ">
+
+        <section>
+            <img src="assets/logo.png" alt="logo">
+            <progress value="10" max="100"></progress>
+        </section>
+
+        <footer>
+            <a href="https://www.rhuanbello.com" target="_blank" rel="noreferrer">Orgulhosamente Desenvolvido por <span>Rhuan Bello</span></a>
+        </footer>
+
+    </aside>
+
+    <main class="main-home hidden">
+
+        <section class="section-search">
+
+            <figure class="logo-container">
+                <img src="assets/logo-small.png" alt="logo" class="logo">
+            </figure>
+
+            <div class="search-container">
+
+                <header class="search-options">
+                    <a class="btn-location change">Definir Cidade</a>
+                    <span>|</span>
+                    <a class="btn-search change active">Fazer Pesquisa</a>
+                </header>
+
+                <form class="search-bar">
+                    <input class="input-location hidden" type="text" placeholder="Localização...">
+                    <input class="input-search" type="text" placeholder="Fazer uma pesquisa...">
+                    <a href="" class="search-btn term" rel="noreferrer">
+                        <img src="assets/icons/search.svg" alt="search" class="search-icon">
+                    </a>
+                    <a class="search-btn location hidden">
+                        <img src="assets/icons/search.svg" alt="search" class="search-icon">
+                    </a>
+                </form>
+
+                <p class="info"></p>
+
+            </div>
+
+        </section>
+
+        <footer class="footer-home">
+
+            <div class="weather-forecast">
+
+                <p class="weather-temperature"></p>
+                <div class="weather-description">
+                    <div class="container">
+                        <div class="content">
+                            <p class="city-name"></p>
+                            <p class="date-container">
+                                <span class="time"></span>
+                                <span>-</span>
+                                <span class="date"></span>
+                            </p>
+                        </div>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="weather-details"></div>
+                </div>
+
+            </div>
+
+            <div class="open-aside">
+                <img src="assets/icons/arrow-up.svg" alt="arrow-up">
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+                    <img src="assets/icons/youtube.png" alt="youtube">
+                </a>
+                <a href="https://twitter.com/home" target="_blank" rel="noreferrer">
+                    <img src="assets/icons/twitter.png" alt="twitter">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                    <img src="assets/icons/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                    <img src="assets/icons/instagram.png" alt="instagram">
+                </a>
+            </div>
+
+        </footer>
+
+        <aside class="aside-forecast hidden">
+
+            <header>
+                <img src="assets/icons/alert-triangle.svg" alt="alert-triangle">
+                <marquee behavior="" direction="left">
+                    <p><span>Instituto Nacional de Meteorologia:</span> INMET publica aviso iniciando em: 02/11/2021 10:10. Chuva entre 20 e 30 mm/h ou até 50 mm/dia, ventos intensos (40-60 km/h). Baixo risco de corte de energia elétrica, queda de galhos de árvores, alagamentos e de descargas elétricas.</p>
+                </marquee>
+            </header>
+
+            <section class="weatherForecast">
+            </section>
+
+            <footer>
+                <div class="close-aside">
+                    <img src="assets/icons/arrow-down.svg" alt="close-aside">
+                </div>
+            </footer>
+
+        </aside>
+
+    </main>
+    
+</body>
+</html>
